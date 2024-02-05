@@ -6,3 +6,5 @@ console.log(ext);
 
 let base=path.basename('D:\ComputerScience\Nodejs\Practice\modulesconcept\modularity\path\text.txt')
 console.log(base);
+
+console.log(__dirname);
