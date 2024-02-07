@@ -3,6 +3,7 @@
 
 //Before getting response from the server data must travel from one middle ware to other middleware and other to next middleware like this,after this we are getting response
 
+const custware=require("../Custom")
 
 const express=require("express")
 const app=express()
@@ -11,10 +12,14 @@ const port=5000;
 //use method is used for accessing middleware
 app.use(express.json())
 
-// app.use((req,res)=>
-// {
-//     console.log("Customised Middleware");
-// })
+//whenever we create custmised middleware we should use next() y because middlewares transfer data blw each other
+app.use(custware)
+
+app.use((req,res,next)=>
+{
+    console.log("This is Second MiddleWare");
+    next()
+})
 
 app.get("/",(req,res)=>
 {
