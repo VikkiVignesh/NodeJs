@@ -1,0 +1,12 @@
+why express?
+-> It has more functionalities compare to node js 
+and as its a frame work of nodejs ,its syntax is smaller than actual syntax.
+It saves the time
+
+
+MiddleWares
+-> Express allows MiddleWares
+MiddleWares help for interacting with clirnt and server ,
+
+Routing
+-:It handles the request and responses
