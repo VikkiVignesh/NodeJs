@@ -8,7 +8,7 @@ const port=3000;
 
 
 //adding middleware to the server for connecting one http call to other http call
-app.use(express.json);//middleware reads data in JSON formate
+app.use(express.json());//middleware reads data in JSON formate
 //get method
 
 app.get("/",(req,res)=>
@@ -83,7 +83,7 @@ app.get("/courseslist",(req,res)=>
 
 
 //Post method
-app.post("/courseslist",(req,res)=>
+app.post("/Addcourse",(req,res)=>
 {
     const course={
         id:rout.length+1,
